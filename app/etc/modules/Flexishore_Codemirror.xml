@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Flexishore_Codemirror>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Flexishore_Codemirror>
+    </modules>
+</config>

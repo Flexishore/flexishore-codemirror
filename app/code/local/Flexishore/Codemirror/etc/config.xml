@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Flexishore_Codemirror>
+            <version>0.1</version>
+        </Flexishore_Codemirror>
+    </modules>
+
+    <global>
+        <models>
+            <codemirror>
+                <class>Flexishore_Codemirror_Model</class>
+            </codemirror>
+        </models>
+    </global>
+
+    <adminhtml>
+        <events>
+            <cms_wysiwyg_config_prepare>
+                <observers>
+                    <wysiwyg_observer>
+                        <type>singleton</type>
+                        <class>codemirror/observer</class>
+                        <method>prepareWidgetsPluginConfig</method>
+                    </wysiwyg_observer>
+                </observers>
+            </cms_wysiwyg_config_prepare>
+        </events>
+    </adminhtml>
+    
+</config>
